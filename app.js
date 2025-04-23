@@ -14,12 +14,11 @@ const NEZHA_KEY = process.env.NEZHA_KEY || '';             // v1的NZ_CLIENT_SEC
 const AUTO_ACCESS = process.env.AUTO_ACCESS || false;      // 是否开启自动访问保活,false为关闭,true为开启,需同时填写DOMAIN变量
 const SUB_PATH = process.env.SUB_PATH || 'sub';            // 节点订阅路径
 const XPATH = process.env.XPATH || 'xhttp';                // xhttp路径
-const DOMAIN = process.env.DOMAIN || '';                   // 域名或ip,留空将自动获取服务器ip
-const NAME = process.env.NAME || 'Vls';                    // 节点名称
-const PORT = process.env.PORT || 3000;                     // http服务
 const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'renxp.0o0o0o0o0o0o0o0.dpdns.org';          // 固定隧道域名,留空即启用临时隧道
 const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiNmZmZDMxZTM2NTU2N2I3ZGQ1NGE1NGM5Njc2ZWM4MDkiLCJ0IjoiMGUyZTc3MDQtZDVhYS00ZWY4LWI4NjYtOWM5ZTliZjE3OWIxIiwicyI6Ik9UTTJNekkzT0RNdE5XTmpOaTAwTVRsa0xUaGlaakl0WVRFeE5tSmpORE0zWVdZMiJ9';              // 固定隧道密钥json或token,留空即启用临时隧道,json获取地址：https://fscarmen.cloudflare.now.cc
 const ARGO_PORT = process.env.ARGO_PORT || 8001;            // 固定隧道端口,使用token需在cloudflare后台设置和这里一致
+const CFIP = process.env.CFIP || 'www.visa.com.sg';         // 节点优选域名或优选ip  
+const CFPORT = process.env.CFPORT || 443;                   // 节点优选域名或优选ip对应的端口
 
 // 核心配置
 const SETTINGS = {
