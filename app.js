@@ -16,8 +16,6 @@ const SUB_PATH = process.env.SUB_PATH || 'sub';            // 节点订阅路径
 const XPATH = process.env.XPATH || 'xhttp';                // xhttp路径
 const DOMAIN = process.env.DOMAIN || '';                   // 域名或ip,留空将自动获取服务器ip
 const NAME = process.env.NAME || 'Vls';                    // 节点名称
-const NAME = process.ARGO_DOMAIN || '';                    // argo域名
-const NAME = process.ARGO_AUYH || '';                   // argo密钥
 const PORT = process.env.PORT || 3000;                     // http服务
 
 // 核心配置
